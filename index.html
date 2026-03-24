@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8" />
   <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
@@ -12,14 +12,13 @@
   <meta name="robots" content="index, follow" />
   <title>F0RTHSP4CE - Hackerspace in Tbilisi</title>
   <meta name="description"
-    content="A community of enthusiasts, focused on technology and art. We are trying to wrap our heads around things that are not easy to understand and to create events. But first and foremost we are having a good time." />
+    content="A community-run hackerspace in Tbilisi for technology, art, events, and projects. Learn how to visit, what happens here, and how public events work." />
   <meta name="keywords" content="f0rthsp4ce, forthspace, hackspace, hackerspace, hackerspace tbilisi" />
-  <meta name="next-head-count" content="15" />
   <script>
     function addCopyOnClick(element) {
       element.onclick = function () {
         document.execCommand("copy");
-      }
+      };
 
       element.addEventListener("copy", function (event) {
         event.preventDefault();
@@ -29,147 +28,171 @@
       });
     }
 
-    document.addEventListener('DOMContentLoaded', function () {
-      [].forEach.call(document.querySelectorAll('.copy-on-click'), addCopyOnClick);
+    document.addEventListener("DOMContentLoaded", function () {
+      [].forEach.call(document.querySelectorAll(".copy-on-click"), addCopyOnClick);
     });
   </script>
-  <style>
-    .table-row {
-        display: flex;
-        width: 100%;
-    }
-    .table-cell {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-		padding: 5px; /* Add padding */
-        overflow: hidden;
-    }
-    .table-cell img {
-        width: auto;
-        max-height: 100%; /* Ensures images have the same height */
-        max-width: 600px;
-    }
-</style>
 </head>
 
 <body>
-  <main>
-    <h1><img id="logo" src="icons/favicon-32x32.png" /> F0RTHSP4CE</h1>
-    <p>
-      F0RTHSP4CE is a
-      <a target="_blank" href="https://wiki.hackerspaces.org/Hackerspaces">hackerspace</a>.
-      A community of enthusiasts, focused on technology and art. We are
-      trying to wrap our heads around things that are not easy to
-      understand and to create events. But first and foremost we are
-      having a good time.
-    </p>
-    <p>
-      Our mission is to develop the community for everybody. We break
-      the walls and build the bridges, and help each other.
-    </p>
+  <main class="site-shell">
+    <header class="hero">
+      <p class="eyebrow">Hackerspace in Tbilisi</p>
+      <h1><img id="logo" src="icons/favicon-32x32.png" alt="" /> F0RTHSP4CE</h1>
+      <p class="lede">
+        A community-run hackerspace for technology, art, events, experiments, and the social side effects of all of
+        those things.
+      </p>
+      <nav class="page-nav">
+        <a href="visit-us.html">Visit</a>
+        <a href="events.html">Events</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/visitors" target="_blank">Wiki</a>
+        <a href="https://t.me/f0_public_chat" target="_blank">Chat</a>
+      </nav>
+    </header>
 
-    <h2 id="howto">How to approach us</h2>
-    <p>
-      Tbilisi, <strong>Ana Kalandadze st, 5</strong> (Saburtalo) (<span class="copy-on-click">41.72624248873,
-        44.77017106528</span>)
-    <ul>
-      <li><a target="_blank" href="https://maps.app.goo.gl/C43bCv9ePMSpT5FdA">Google Maps</a></li>
-      <li><a target="_blank" href="https://yandex.com.ge/maps/-/CDrPEJja">Yandex Maps</a></li>
-      <li><a target="_blank" href="https://www.openstreetmap.org/node/9959433575">OSM</a></li>
-    </ul>
-    The main entrance is a gray metal gate; our blue door is inside on the first floor to the right:
-    </p>
-	
-	<div class="table-row" style="height: 300px;">
-		<div class="table-cell">
-			<img src="img/entrance_1.jpg" alt="Image 1">
-		</div>
-		<div> </div>
-		<div class="table-cell">
-			<img src="img/entrance_2.jpg" alt="Image 2">
-		</div>
-	</div>
+    <section class="grid two-up">
+      <article class="panel">
+        <h2>What F0RTHSP4CE Is</h2>
+        <p>
+          F0RTHSP4CE is a <a target="_blank" href="https://wiki.hackerspaces.org/Hackerspaces">hackerspace</a>:
+          a space made by its own community. People come here to learn, build, host events, work on projects, test
+          ideas, and occasionally just exist around interesting people.
+        </p>
+        <p>
+          It is not a coworking subscription box or a repair service counter. The community keeps it alive by actually
+          participating in it.
+        </p>
+      </article>
 
+      <article class="panel">
+        <h2>What Usually Happens Here</h2>
+        <ul>
+          <li>talks and lectures</li>
+          <li>workshops and build nights</li>
+          <li>electronics, radio, media, and software projects</li>
+          <li>study groups, reading groups, and film nights</li>
+          <li>quiet hacking, noisy hacking, and occasional social chaos</li>
+        </ul>
+      </article>
+    </section>
 
-    <p>
-      Come and visit — to talk, to see the space for yourself or maybe
-      even to ask for help. Different people find different modes of
-      communication preferrable, so you may also just visit and work on
-      your project uninterrupted or just sit and read a book.
-    </p>
-    <p>
-      You can visit all of our events: join <a href="https://t.me/f0rthsp4ce">telegram channel</a> to get the
-      announcements.
-    </p>
-    <p>
-      If you wish to visit us at times when there are no events taking place, we kindly ask you to arrange your visit
-      with a resident, who will guide you in the space. You can ask for a visit in a <a
-        href="https://t.me/f0_public_chat/29469">special Telegram topic</a>, to see if there is anyone ready to meet
-      you.
-    </p>
+    <section class="panel" id="howto">
+      <h2>How To Visit</h2>
+      <p>
+        Best first option: come to a public event or open evening.
+      </p>
+      <p>
+        If you want to visit outside an event, write in the
+        <a href="https://t.me/F0_PUBLIC_CHAT/29469" target="_blank">Ask to visit</a> topic with your day, time, and
+        purpose. Wait for a host to confirm. For a first visit, that usually means a resident.
+      </p>
+      <div class="grid two-up compact-gap">
+        <div>
+          <h3>Good To Know</h3>
+          <ul>
+            <li>Advance contact is recommended unless you are coming to a public event.</li>
+            <li>Guests are hosted. "Somebody is there" does not automatically mean "drop in".</li>
+            <li>Members can host a guest only when a resident is already in the space.</li>
+            <li>Some tools, rooms, and project areas are not public by default.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Address</h3>
+          <p>
+            Tbilisi, <strong>Ana Kalandadze st, 5</strong> (Saburtalo)<br />
+            <span class="copy-on-click">41.72624248873, 44.77017106528</span>
+          </p>
+          <ul>
+            <li><a target="_blank" href="https://maps.app.goo.gl/C43bCv9ePMSpT5FdA">Google Maps</a></li>
+            <li><a target="_blank" href="https://yandex.com.ge/maps/-/CDrPEJja">Yandex Maps</a></li>
+            <li><a target="_blank" href="https://www.openstreetmap.org/node/9959433575">OpenStreetMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <h2 id="principles">Principles</h2>
-    <ol>
-      <li>
-        <b>Be excellent to each other</b>. Listen to each other's needs and opinions.
-      </li>
-      <li>
-        <b>Do not oppress and do not bother</b>. Be wary of personal boundaries, be ready to make compromises.
-      </li>
-      <li>
-        <b>Give more than you take</b>. F0RTHSP4CE can grow only if the community makes it better. We
-        are not a co-working per se, so we are all the ones who make
-        the workspaces for each other.
-      </li>
-	  <li>
-		<b>Financial independence</b>. F0RTHSP4CE is not a start-up, resident is a resident and you can't buy more voting power with donations.
-		</li>
-      <li>
-        <b>Do-ocracy</b>. If you want to change something, do it, but bear in mind the
-        needs of the others.
-      </li>
-      <li>
-        <b>Dying is strictly forbidden</b>. Safety first. Follow the rules and help the others.
-      </li>
-    </ol>
+    <section class="panel">
+      <h2>Entrance</h2>
+      <p>
+        The main entrance is a gray metal gate. Our blue door is inside on the first floor to the right.
+      </p>
+      <div class="gallery">
+        <img src="img/entrance_1.jpg" alt="Gray metal gate at the entrance to F0RTHSP4CE" />
+        <img src="img/entrance_2.jpg" alt="Blue inner door for F0RTHSP4CE" />
+      </div>
+    </section>
 
+    <section class="grid two-up">
+      <article class="panel">
+        <h2>First-Visit Expectations</h2>
+        <ul>
+          <li>Ask before taking photos or video.</li>
+          <li>Ask before touching tools, equipment, or other people's projects.</li>
+          <li>Treat guest Wi-Fi like public Wi-Fi.</li>
+          <li>Expect a workshop/event environment, not a polished service desk.</li>
+        </ul>
+      </article>
 
-    <h2 id="donation">Donation</h2>
-    <p>
-      F0RTHSP4CE is organized horizontally, so we can exist only with
-      residents' and guests' donations. If you want to help us:
-    </p>
-    <ul>
-      <li>drop some cash into the Donation Box</li>
-      <li>donate materials or instruments</li>
-    </ul>
+      <article class="panel">
+        <h2>Basic Safety Note</h2>
+        <p>
+          This is a real workshop and event space. Tools, hot things, fumes, stairs, cables, private projects, and
+          unfinished ideas all exist here.
+        </p>
+        <p>
+          If you do not understand something, ask before you touch it.
+        </p>
+      </article>
+    </section>
 
-    <h2 id="location">Links</h2>
-    <ul>
-      <li>
-        <span>Telegram: </span><a target="_blank" href="https://t.me/f0rthsp4ce">channel</a> / <a target="_blank"
-          href="https://t.me/f0_public_chat">chat</a> / <a target="_blank" href="https://t.me/f0rthsp4ce_l1ve">live
-          channel</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://www.instagram.com/f0rthsp4ce">Instagram</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/f0rthsp4ce">Github</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/F0RTHSP4CE/wiki">F0RTHSP4CE Wiki</a>
-      </li>
-    </ul>
+    <section class="grid two-up">
+      <article class="panel">
+        <h2>How Events Work</h2>
+        <ul>
+          <li>Public events are announced in the channel and put in the calendar.</li>
+          <li>A resident space host is responsible for the event happening in the space.</li>
+          <li>A member can still be the event organizer, speaker, or session lead.</li>
+          <li>If you want to propose one, start with the <a href="events.html">events page</a>.</li>
+        </ul>
+      </article>
 
-    <h2 id="location">Events</h2>
-    <p>
-      <iframe
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23333333&ctz=Asia%2FTbilisi&hl=en&mode=MONTH&showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=1&showCalendars=0&showTz=0&src=MjZiNGQyZjMyOGIyY2Q4MjdhODU1N2I3NzJkYzcwMTA2YmU4M2ZiYmQ2YTU0ZGYwY2M0MGI3MmIzYjgxYjZjZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23D81B60"
-        style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
-    </p>
+      <article class="panel">
+        <h2>How To Support The Space</h2>
+        <ul>
+          <li>drop cash into the donation box</li>
+          <li>donate useful tools or materials</li>
+          <li>host something, document something, fix something, or help the place stay alive</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="panel">
+      <h2>Public Wiki</h2>
+      <div class="link-grid">
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/visitors" target="_blank">Visitors</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/community-standards" target="_blank">Community standards</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/events-policy" target="_blank">Events policy</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/safety" target="_blank">Safety</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/governance" target="_blank">Governance</a>
+        <a href="https://wiki.f0rth.space/en/F0RTHSP4CE/residency" target="_blank">Residency</a>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Links</h2>
+      <ul>
+        <li>
+          Telegram:
+          <a target="_blank" href="https://t.me/f0rthsp4ce">channel</a> /
+          <a target="_blank" href="https://t.me/f0_public_chat">chat</a> /
+          <a target="_blank" href="https://t.me/f0rthsp4ce_l1ve">live channel</a>
+        </li>
+        <li><a target="_blank" href="https://www.instagram.com/f0rthsp4ce">Instagram</a></li>
+        <li><a target="_blank" href="https://github.com/f0rthsp4ce">GitHub</a></li>
+        <li><a target="_blank" href="https://wiki.f0rth.space/">F0RTHSP4CE Wiki</a></li>
+      </ul>
+    </section>
   </main>
 </body>
 
