@@ -138,6 +138,20 @@ h1 {
     cursor: pointer;
 }
 
+.site-footer {
+    margin-top: 24px;
+    padding-top: 18px;
+    border-top: 1px solid #3f3f3f;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.site-footer a {
+    color: #aaa;
+    font-weight: normal;
+}
+
 @media (max-width: 640px) {
     body {
         font-size: 17px;
