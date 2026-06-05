@@ -46,6 +46,38 @@ h1 {
     margin-bottom: 24px;
 }
 
+.eyebrow-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.eyebrow-row .eyebrow {
+    margin-bottom: 0;
+}
+
+.donate-btn {
+    background: transparent;
+    color: #00ff00;
+    font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 18px;
+    border: 2px solid #00ff00;
+    display: inline-block;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+
+.donate-btn:hover {
+    background: #00ff00;
+    color: #000;
+}
+
 .eyebrow {
     color: #9ec3ff;
     font-size: 14px;
